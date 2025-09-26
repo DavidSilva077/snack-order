@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Frontend - Next.js 14 + React + TypeScript
 
-## Getting Started
+Interface web para gerenciar produtos e pedidos da lanchonete.\
+Desenvolvido com Next.js (App Router), Tailwind CSS, React Query e Axios.
 
-First, run the development server:
+* * * * *
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Requisitos:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   Node.js 18+
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-   npm ou pnpm
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* * * * *
 
-## Learn More
+Configuração:
 
-To learn more about Next.js, take a look at the following resources:
+1.  Instalar dependências:\
+    `npm install`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2.  Criar `.env.local` na pasta `/frontend` com o conteúdo:\
+    `NEXT_PUBLIC_API_BASE_URL=http://localhost/api`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3.  Rodar em modo desenvolvimento:\
+    `npm run dev`
 
-## Deploy on Vercel
+A aplicação ficará disponível em:\
+`http://localhost:3000`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Funcionalidades:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-   `/products` → Listagem de produtos + adicionar/excluir
+
+-   `/orders/new` → Criar pedido selecionando produtos
+
+-   `/orders/[id]` → Detalhes do pedido (cliente, itens e status em tempo real)
+
+Atualização de status:\
+O frontend faz polling a cada 3 segundos no endpoint do pedido.\
+Assim, quando o backend muda o status (fila), a tela é atualizada automaticamente.

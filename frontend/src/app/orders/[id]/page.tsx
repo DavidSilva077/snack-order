@@ -27,7 +27,6 @@ export default function OrderDetailsPage() {
         </div>
       </div>
 
-      {/* barra sticky de status para quando o polling atualizar */}
       <div className="sticky top-0 z-10 flex items-center justify-between border-b bg-white px-1 py-2">
         <span>Status:</span>
         <StatusBadge status={order.status} />
