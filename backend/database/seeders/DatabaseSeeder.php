@@ -2,22 +2,17 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Product;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     */
-    public function run(): void
-    {
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
-    }
+  public function run(): void
+  {
+    Product::insert([
+      ['nome'=>'Chips','preco'=>2.50,'categoria'=>'Snacks','created_at'=>now(),'updated_at'=>now()],
+      ['nome'=>'Refrigerante','preco'=>1.75,'categoria'=>'Bebidas','created_at'=>now(),'updated_at'=>now()],
+      ['nome'=>'Barra de Cereal','preco'=>3.00,'categoria'=>'Saudável','created_at'=>now(),'updated_at'=>now()],
+    ]);
+  }
 }
