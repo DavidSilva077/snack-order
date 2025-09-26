@@ -1,0 +1,12 @@
+node_modules/
+frontend/.next/
+frontend/out/
+*.log
+
+backend/vendor/
+backend/storage/
+backend/.env
+
+.DS_Store
+.vscode/
+.idea/
