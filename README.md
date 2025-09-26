@@ -20,7 +20,7 @@ O sistema é composto por:
 
 ## 📽 Demonstração
 
-[🎥 Assista ao vídeo de demonstração da aplicação](COLOQUE_AQUI_O_LINK_DO_VIDEO)
+https://github.com/user-attachments/assets/c050462c-70a9-438a-9f8b-53240579b7ac
 
  ## 🚀 Como Rodar
 
