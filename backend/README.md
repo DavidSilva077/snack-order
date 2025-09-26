@@ -52,6 +52,10 @@ Desenvolvido em Laravel 10 com PostgreSQL e uso de filas (queues) para processam
     -   Rodar a fila para processar os jobs:
 
         `./vendor/bin/sail artisan queue:work`
+        
+    -   Rodar os testes (opcional):
+
+        `./vendor/bin/sail test`
 
 A API estará disponível em:\
 <http://localhost/api>
